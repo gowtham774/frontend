@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>  
+
+
+        <h1>five step</h1>
+	</title>
+	link
+</head>
+<body>
+
+	<img src="New folder/download.png">
+	<h1>node js</h1>
+	<p style = "colour:blue;">
+
+	Create  &nbsp &nbsp a nodejs + ejs application to track issues/bugs for a project.</p>
+	<p>
+
+	<!-- <br> --> Read the Features below on what to implement.
+
+<br>
+	 You can take inspiration from the Github issue tracker or some other application.
+Refer to the question doc for more details:
+</p>
+ <ol type="a" start="10">
+       <li> Creativity and design (css and others) (Max Score 10)</li>
+        <li>Code (comments, structuring, functions/variable namings) (Max Score 10)</li>
+        <li>All features (Max Score 30)</li>
+    </ol>
+    <ul type="a" start="10">
+    	 <li> Creativity and design (css and others) (Max Score 10)</li>
+        <li>Code (comments, structuring, functions/variable namings) (Max Score 10)</li>
+        <li>All features (Max Score 30)</li>
+    </ul>
+
+</body>
+</html>
+function addinmain(todoList) {
+    allTodos.innerHTML = ""
+    todoList.forEach(element => {
+        var x = `<li id=${element.id} class="todo-item">
+    <p id="task"> ${element.complete ? `<strike>${element.task}</strike>` : element.task} </p>
+    <div class="todo-actions">
+                <button class="complete btn btn-success">
+                    <i class=" ci bx bx-check bx-sm"></i>
+                </button>
+
+                <button class="delete btn btn-error" >
+                    <i class="di bx bx-trash bx-sm"></i>
+                </button>
+            </div>
+        </li>`
+        allTodos.innerHTML += x
+    });
+}
